@@ -1,80 +1,22 @@
-![reactjs-vite-tailwindcss-boilerplate](https://user-images.githubusercontent.com/16243531/217138979-b854309c-4742-4275-a705-f9fec5158217.jpg)
+# UI Engineer Interview Code Test
 
-# React Tailwindcss Boilerplate build with Vite
+Welcome to the UI Engineer interview! In this test, you will be using Tailwind CSS to try to duplicate the design provided in the Figma file. Don't worry if we don't make it to the end; let's work on this together!
 
-This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.
+## Instructions
 
-## What is inside?
+### 1. Getting Started
+- Access the design from the Figma file: [Todo List Design](https://www.figma.com/file/cV5HiOQ71s38YXDmSaS6pj/Todo-List)
 
-This project uses many tools like:
+### 2. Page Setup
+- Work on the body styling, grid layout, and page title.
 
-- [Vite](https://vitejs.dev)
-- [ReactJS](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Vitest](https://vitest.dev)
-- [Testing Library](https://testing-library.com)
-- [Tailwindcss](https://tailwindcss.com)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
+### 3. Card Design
+- Work on the card styling including the card title, and the card's open and close behavior, along with spacing adjustments.
 
-## Getting Started
+### 4. Todo Items
+- Focus on the todo items, including styling for checkboxes.
 
-### Install
+### 5. Wrap-Up
+- That's it! We'll conclude with some questions and suggestions.
 
-Create the project.
-
-```bash
-npx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
-```
-
-Access the project directory.
-
-```bash
-cd my-app
-```
-
-Install dependencies.
-
-```bash
-pnpm install
-```
-
-Serve with hot reload at <http://localhost:5173>.
-
-```bash
-pnpm run dev
-```
-
-### Lint
-
-```bash
-pnpm run lint
-```
-
-### Typecheck
-
-```bash
-pnpm run typecheck
-```
-
-### Build
-
-```bash
-pnpm run build
-```
-
-### Test
-
-```bash
-pnpm run test
-```
-
-View and interact with your tests via UI.
-
-```bash
-pnpm run test:ui
-```
-
-## License
-
-This project is licensed under the MIT License.
+Good luck, and let's have fun with this!
