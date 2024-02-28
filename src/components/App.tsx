@@ -21,7 +21,7 @@ interface TodoListsProps {
 
 const TodoLists: React.FC<TodoListsProps> = ({ todos }) => {
   return (
-    <div className="todo-lists">
+    <div className="todo-lists flex gap-10 w-[920px] mx-auto mt-14">
       <TodoList title="Work" todos={todos.work} />
       <TodoList title="Home" todos={todos.home} />
       <TodoList title="Other" todos={todos.other} />
@@ -49,17 +49,19 @@ const TodoList: React.FC<TodoListProps> = ({ title, todos }) => {
   };
 
   return (
-    <article className="todo-list">
-      <header className="todo-list-header">
+    <article className="todo-list bg-white flex-grow rounded-2xl shadow-lg flex-1">
+      <header className="todo-list-header p-4 pl-6">
         <h2 className="todo-list-title">{title}</h2>
         
       </header>
 
-      <ul className="todo-list-container">
+      <ul className="todo-list-container border-t border-slate-200 py-4">
         {todoItems.map(todo => (
-          <li className={`todo-list-item ${todo.finished ? "todo-list-item--finished" : ""}`} key={todo.id} style={{ textDecoration: todo.finished ? 'line-through' : 'none' }}>
-            <input type="checkbox" checked={todo.finished} onChange={() => toggleTodo(todo.id)} />
-            {todo.task}
+          <li className={`px-5 py-3 todo-list-item ${todo.finished ? "todo-list-item--finished" : ""}`} key={todo.id} style={{ textDecoration: todo.finished ? 'line-through' : 'none' }}>
+            <label>
+              <input className='mr-3' type="checkbox" checked={todo.finished} onChange={() => toggleTodo(todo.id)} />
+              {todo.task}
+            </label>
           </li>
         ))}
       </ul>
@@ -90,8 +92,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="app">
-      <h1>My Todo List</h1>
+    <div className="app bg-slate-50 h-screen w-screen pt-20 flex flex-col justify-items-center bg-gradient-to-b from-slate-200 to-slate-300">
+      <h1 className='align-center text-center text-4xl font-black text-slate-800'>My Todo List</h1>
       <TodoLists todos={todos} />
     </div>
   );
