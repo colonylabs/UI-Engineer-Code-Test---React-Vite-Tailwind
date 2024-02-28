@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import 'primeicons/primeicons.css'
 import './app.css'
 
 // Define an interface for a single todo item
@@ -104,15 +103,6 @@ const App: React.FC = () => {
     <div className="app">
       <h1>My Todo List</h1>
       <TodoLists todos={todos} />
-
-      {/* <aside className="mt-10">
-        <h2 className="bold text-2xl">Icon examples</h2>
-        <div className="grid grid-cols-2 gap-2">
-          <i className="pi pi-check text-xl"> check</i>
-          <i className="pi pi-chevron-down text-xl"> chevron down</i>
-          <i className="pi pi-chevron-up text-xl"> chevron Up</i>
-        </div>
-      </aside> */}
     </div>
   )
 }
