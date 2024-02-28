@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'primeicons/primeicons.css';
 
 // Define an interface for a single todo item
 interface TodoItem {
@@ -52,7 +53,7 @@ const TodoList: React.FC<TodoListProps> = ({ title, todos }) => {
     <article className="todo-list">
       <header className="todo-list-header">
         <h2 className="todo-list-title">{title}</h2>
-        
+
       </header>
 
       <ul className="todo-list-container">
@@ -93,6 +94,18 @@ const App: React.FC = () => {
     <div className="app">
       <h1>My Todo List</h1>
       <TodoLists todos={todos} />
+
+      <aside className='mt-10'>
+        <h2 className='text-2xl bold '>Icon examples</h2>
+        <div className="grid grid-cols-2 gap-2">
+          <i className="pi pi-check text-xl"> check</i>
+          <i className="pi pi-chevron-down text-xl"> chevron down</i>
+          <i className="pi pi-chevron-up text-xl"> chevron Up</i>
+        </div>
+
+      </aside>
+
+
     </div>
   );
 };
