@@ -2,13 +2,9 @@
 
 Welcome to the UI Engineer interview! In this test, you will be using Tailwind CSS to try to duplicate the design provided in the Figma file. Don't worry if we don't make it to the end; let's work on this together!
 
-## Install dependencies
-- To install dependencies, use `npm` or `pnpm` by running `npm install` in the root directory.
-
 ## Instructions
 
 ### 1. Getting Started
-- Start the server by running `npm run dev` or `pnpm run dev`.
 - Access the design from the Figma file: [Todo List Design](https://www.figma.com/file/cV5HiOQ71s38YXDmSaS6pj/Todo-List)
 
 ### 2. Page Setup
